@@ -8,10 +8,10 @@ $(document).ready(function() {
         success: function(response) {
             // console.log(response);
             // console.log(response.sources[2]);
-            var sources = response.sources;
+            // var sources = response.sources;
             // console.log(sources[2]);
             var html = "<select class='form-control' id='sourceOption'>";
-            $.each(sources, function(index, source){
+            $.each(response.sources, function(index, source){
                 // console.log(source);
                 html += "<option value='" + source.id + "'>" + source.name + "</option>"
             })
